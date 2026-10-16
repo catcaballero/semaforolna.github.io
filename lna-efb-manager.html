@@ -179,9 +179,9 @@ tbody tr.drag-over{background:rgba(124,58,237,.14);outline:2px dashed var(--acce
     <div class="header-title">
       <h1>EFB Pilot Apps &amp; Updates</h1>
       <div class="header-meta">
-        <span>VERSIÓN: <strong id="metaVersion">2026-09</strong></span>
+        <span>VERSIÓN: <strong id="metaVersion">2026-10</strong></span>
         <span style="color:rgba(255,255,255,.25)">|</span>
-        <span>FECHA: <strong id="metaDate">SEP 8TH, 2026</strong></span>
+        <span>FECHA: <strong id="metaDate">OCT 16TH, 2026</strong></span>
       </div>
     </div>
   </div>
@@ -318,11 +318,11 @@ tbody tr.drag-over{background:rgba(124,58,237,.14);outline:2px dashed var(--acce
     </div>
     <div class="form-group">
       <label class="form-label">Ciclo de versión</label>
-      <input type="text" id="mVersion" placeholder="ej: 2026-09"/>
+      <input type="text" id="mVersion" placeholder="ej: 2026-10"/>
     </div>
     <div class="form-group">
       <label class="form-label">Fecha de publicación</label>
-      <input type="text" id="mDate" placeholder="ej: SEP 8TH, 2026"/>
+      <input type="text" id="mDate" placeholder="ej: OCT 16TH, 2026"/>
     </div>
     <div class="modal-footer">
       <button class="btn-gray" onclick="closeMetaModal()">Cancelar</button>
@@ -352,15 +352,15 @@ tbody tr.drag-over{background:rgba(124,58,237,.14);outline:2px dashed var(--acce
 <script>
 // ── DATA ──────────────────────────────────────────────
 const SAMPLE=[
-  {id:'1', name:'iPad iOS',         version:'26.5.2',     status:'authorized',logo:'ios.png',color:'#3a3a3c'},
+  {id:'1', name:'iPad iOS',         version:'26.6',     status:'authorized',logo:'ios.png',color:'#3a3a3c'},
   {id:'2', name:'Lido mPilot',      version:'7.3',     status:'authorized',logo:'mpilot.jpg',color:'#1a1a2e'},
-  {id:'3', name:'CAE eFM',          version:'7.13.1',     status:'authorized',logo:'efm.jpg',color:'#4C1D95'},
-  {id:'4', name:'Content',          version:'26.05',      status:'authorized',logo:'content.png',color:'#c0392b'},
+  {id:'3', name:'CAE eFM',          version:'7.14',     status:'authorized',logo:'efm.jpg',color:'#4C1D95'},
+  {id:'4', name:'Content',          version:'26.08',      status:'authorized',logo:'content.png',color:'#c0392b'},
   {id:'5', name:'Adobe Acrobat',    version:'26.07.01',   status:'authorized',logo:'acrobat.png',color:'#8B0000'},
   {id:'6', name:'CrewPad Pro',      version:'2.1.3',      status:'authorized',logo:'crewpad.png',color:'#1a3a5c'},
-  {id:'7', name:'Intelligent Hub',  version:'26.05',      status:'authorized',logo:'hub.png',color:'#6B2FA0'},
-  {id:'8', name:'F-Tolt',            version:'1.3.18',     status:'authorized',logo:'ftolt.png',color:'#2d3748'},
-  {id:'9', name:'OpLD',             version:'9.5.32',     status:'authorized',logo:'opld.png',color:'#222222'},
+  {id:'7', name:'Intelligent Hub',  version:'26.08',      status:'authorized',logo:'hub.png',color:'#6B2FA0'},
+  {id:'8', name:'F-Tolt',            version:'1.3.19',     status:'authorized',logo:'ftolt.png',color:'#2d3748'},
+  {id:'9', name:'OpLD',             version:'10.5.33',     status:'authorized',logo:'opld.png',color:'#222222'},
   {id:'10',name:'iBCC',             version:'1.0.3',      status:'authorized',logo:'ibcc.png',color:'#7B3F00'},
 ];
 
@@ -371,7 +371,7 @@ function loadApps(){
 
 function loadMeta(){
   // Devuelve siempre el objeto estático sin revisar localStorage
-  return { version: '2026-09', date: 'SEP 8TH, 2026' };
+  return { version: '2026-10', date: 'OCT 16TH, 2026' };
 }
 
 let apps = loadApps(), meta = loadMeta(), pilotView = true, dragSrc = null;
